@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block context %}
+    {% for obj_mess in list_message %}
+	<div class="block-mess">
+		<div class="date">{{ obj_mess.created|date:"d.M.Y H:i:s" }}</div>
+	    <div class="text">{{ obj_mess.text  }}</div>
+	</div>
+    {% endfor %}
+    <div class="form-block">
+		<form action="/" method="post">
+			{% csrf_token %}
+			<div class="error">
+				{% for i in form.text.errors %}
+					{{ i }}
+					{% if not forloop.last %},&nbsp;{% endif %}
+				{% endfor %}
+			</div>
+			<p style="margin-top:1px">{{ form.text }}</p>
+			<p><input type="submit" value="Добавить"></p>
+		</form>
+    </div>
+{% endblock %}

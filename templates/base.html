@@ -1,0 +1,13 @@
+{% load static %}
+<html>
+<head>
+<title>Анонимный блок</title>
+<link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+</head>
+<body>
+    <div class="main">
+    <h1>Анонимный блог</h1>
+    {% block context %}{% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+:root {
+    --color-grey: grey;
+}
+
+html, body {
+    font: 12pt arial, sans-serif;
+}
+
+.main {
+    padding: 0 4%;
+}
+
+.block-mess {
+    margin-bottom: 15px;
+}
+
+.block-mess .text {
+    color: red;
+}
+
+.block-mess>.date {
+    font-size: 8pt;
+    color: var(--color-grey);
+    padding-bottom: 3px;
+}
+
+.form-block {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form-block input[type="submit"]{
+    float: right;
+}
+
+.error {
+    font-size: 8pt;
+    color: red;
+    opacity: 0.6;
+}
+
