@@ -44,3 +44,27 @@ html, body {
     opacity: 0.6;
 }
 
+.pagination {
+    list-style: none;
+    margin: 5px 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #000;
+}
+
+.pagination li {
+    display: inline-block;
+}
+
+.pagination .active {
+    color: green;
+}
+
+.pagination .disabled {
+    opacity: 0.3;
+}
